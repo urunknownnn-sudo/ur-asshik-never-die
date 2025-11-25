@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UR ASSHIK NEVER DIE</title>
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    background:#0b0f1c;
+    color:white;
+    text-align:center;
+}
+.card{
+    width:90%;
+    margin:20px auto;
+    background:#1a2238;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 20px #7a3cff80;
+}
+h1{
+    font-size:32px;
+    background: linear-gradient(#c86bff, #ff3ce6);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.input-box{
+    background:#111624;
+    padding:20px;
+    border-radius:15px;
+    margin:15px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:20px;
+}
+.copy-btn{
+    background:#ff7bff;
+    border:none;
+    padding:10px 16px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<audio id="voiceAudio" src="voice.mp3"></audio>
+
+<h1>UR ASSHIK NEVER DIE</h1>
+<p>🔥 PREMIUM KEY PANEL 🔥</p>
+
+<div class="card">
+    <div class="input-box">
+        <span>URASSHIKKEY24</span>
+        <button class="copy-btn" onclick="copyAndPlay('URASSHIKKEY24')">COPY</button>
+    </div>
+
+    <div class="input-box">
+        <span>5343734</span>
+        <button class="copy-btn" onclick="copyAndPlay('5343734')">COPY</button>
+    </div>
+</div>
+
+<p>Made for you — UR ASSHIK NEVER DIE</p>
+
+<script>
+function copyAndPlay(text){
+    navigator.clipboard.writeText(text).then(()=>{
+        const audio = document.getElementById("voiceAudio");
+        audio.currentTime = 0;
+        audio.play().catch(err=>{
+            console.log("Audio blocked:", err);
+        });
+    });
+}
+</script>
+
+</body>
+</html>
